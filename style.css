@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a.btn {
+  background-color: #ff006a;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+}
+
+.intro p {
+  color: #999;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.intro h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #ff006a;
+  font-weight: 700;
+}
+
+.title-highlight {
+  font-weight: 700;
+}
+
+.description {
+  margin-top: 20px;
+  max-width: 600px;
+  color: #aaa;
+}
+
+.profile-img img {
+  width: 300px;
+  border-radius: 8px;
+}
+body {
+  background: radial-gradient(#1e1e1e, #121212);
+  animation: bgAnim 10s infinite alternate;
+}
+
+@keyframes bgAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.section-block {
+  padding: 80px 20px;
+  background-color: rgba(255, 255, 255, 0.05); /* Transparent white */
+  margin: 40px auto;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  max-width: 960px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+  transition: all 0.4s ease;
+}
+
+.section-block h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00ffe1;
+  display: inline-block;
+}
+
+.section-block p,
+.section-block ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.nav-link.active {
+  color: #00ffe1;
+  border-bottom: 2px solid #00ffe1;
+}
+
+/* Mobile Nav Toggle Button */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;  /* Move it more to the right */
+  color: #fff;
+  z-index: 1001;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.98);
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    display: none;
+    z-index: 1000;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212;
+  padding: 12px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.hamburger {
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* Nav Menu Default */
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* === Header styles === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* === Hamburger icon === */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* === Navigation === */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* === Mobile Styles === */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    display: none;
+    padding: 20px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
